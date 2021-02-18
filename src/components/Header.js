@@ -8,14 +8,10 @@ const Header = () => {
                 <Container>
                     <LinkContainer to="/">
                         <Navbar.Brand>
-                            <span className="monty">
+                            <span className="header-logo">
                                 <span className="r">r</span>
                                 <span className="dot">.</span>
-                                <span className="m">m</span>
-                                <span className="o">o</span>
-                                <span className="n">n</span>
-                                <span className="t">t</span>
-                                <span className="y">y</span>
+                                <span className="monty">monty</span>
                             </span>
                         </Navbar.Brand>
                     </LinkContainer>
