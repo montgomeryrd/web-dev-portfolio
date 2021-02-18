@@ -32,6 +32,28 @@ main {
     display: none;
 }
 
+/* Header */
+.header-logo {
+    font-family: var(--title);
+    font-size: 2rem;
+}
+
+.header-logo .r {
+    color: var(--twitter-blue);
+}
+
+.header-logo .dot {
+    color: var(--off-white);
+}
+
+.header-logo .monty {
+    color: var(--off-white);
+}
+
+.header-logo:hover .r, .monty {
+    color: var(--compliment-orange);
+    transition: 0.5s;
+}
 /* Home Screen */
 
 
