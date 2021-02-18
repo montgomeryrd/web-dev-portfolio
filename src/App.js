@@ -13,16 +13,26 @@ function App() {
 	return (
 		<Router>
 			<ScrollToTop />
-			<Header />
-			<main className="py-3">
-				<Container>
-					<Route exact path="/" component={HomeScreen} />
-					<Route exact path="/about" component={AboutScreen} />
-					<Route exact path="/works" component={WorksScreen} />
-					<Route exact path="/skills" component={SkillsAndEducationScreen} />
-				</Container>
-			</main>
-			<Footer />
+			<div id="desktop">
+				<Header />
+				<main className="py-3">
+					<Container>
+						<Route exact path="/" component={HomeScreen} />
+						<Route exact path="/about" component={AboutScreen} />
+						<Route exact path="/works" component={WorksScreen} />
+						<Route exact path="/skills" component={SkillsAndEducationScreen} />
+					</Container>
+				</main>
+				<Footer />
+			</div>
+			<div id="mobile">
+				<Header />
+				<HomeScreen />
+				<AboutScreen />
+				<WorksScreen />
+				<SkillsAndEducationScreen />
+				<Footer />
+			</div>
 		</Router>
 	);
 }

@@ -24,13 +24,22 @@
     user-select: none;
 }
 
-main {
+#desktop {
+    display: flex;
+    flex-direction: column;
     min-height: 80vh;
 }
 
-.menu-wrap {
+#mobile {
     display: none;
 }
+
+#desktop main {
+    min-height: 80vh;
+}
+
+/* Header Styles */
+
 
 /* Home Screen */
 
@@ -48,10 +57,34 @@ main {
     list-style: none;
 }
 
+/* Footer Styles */
+
 @media (max-width: 600px) {
+    #desktop {
+        display: none;
+    }
     
+    #mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Header Styles */
+
+
+    /* Home Screen */
+
+
+    /* About Screen */
+
+
+    /* Works Screen */
+
+
     /* Education Screen */
     .font-awesome-icons {
         justify-content: center;
     }
+
+    /* Footer Styles */
 }
