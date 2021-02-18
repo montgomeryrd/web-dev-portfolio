@@ -24,36 +24,16 @@
     user-select: none;
 }
 
-main {
+#desktop {
+    display: flex;
+    flex-direction: column;
     min-height: 80vh;
 }
 
-.menu-wrap {
+#mobile {
     display: none;
 }
 
-/* Header */
-.header-logo {
-    font-family: var(--title);
-    font-size: 2rem;
-}
-
-.header-logo .r {
-    color: var(--twitter-blue);
-}
-
-.header-logo .dot {
-    color: var(--off-white);
-}
-
-.header-logo .monty {
-    color: var(--off-white);
-}
-
-.header-logo:hover .r, .monty {
-    color: var(--compliment-orange);
-    transition: 0.5s;
-}
 /* Home Screen */
 
 
@@ -70,10 +50,34 @@ main {
     list-style: none;
 }
 
+/* Footer Styles */
+
 @media (max-width: 600px) {
+    #desktop {
+        display: none;
+    }
     
+    #mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Header Styles */
+
+
+    /* Home Screen */
+
+
+    /* About Screen */
+
+
+    /* Works Screen */
+
+
     /* Education Screen */
     .font-awesome-icons {
         justify-content: center;
     }
+
+    /* Footer Styles */
 }
