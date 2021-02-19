@@ -48,8 +48,14 @@ const education = [
     },
     {
         company: 'Codewars',
-        program: 'Code Challenges - 3kyu Member',
-        courses: [],
+        program: 'Code Challenges',
+        courses: [
+            'Rank: 3 kyu',
+            'Honor: 2,148',
+            'Leaderboard Position: #4,031',
+            'Honor Percentile: Top 1.455%',
+            'Total Completed Kata: 510'
+        ],
         website: 'https://www.codewars.com/'
     }
 ]

@@ -3,7 +3,7 @@ import { Jumbotron } from 'react-bootstrap';
 const HomeScreen = () => {
     return (
         <>
-            <Jumbotron>
+            <Jumbotron className="home-screen-container">
                 <h2 className="lead">Hi, my name is</h2>          
                 <h1>Richard Montgomery</h1>
                 <p>
