@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 /* @import "react-alice-carousel/lib/alice-carousel.css"; */
 
 /* Core Styles */
@@ -6,10 +7,11 @@
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;
     --background-color: #001624;
-    --twitter-blue: #03a9f4;
-    --compliment-orange: #e08f1e;
+    --twitter-blue: #036bf4;
+    --compliment-orange: #f0900a;
     --off-white: #fff;
     --title: 'Yusei Magic', sans-serif;
+    --logo: 'Gochi Hand', cursive;
 }
 
 * {
@@ -27,18 +29,87 @@
 #desktop {
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
 }
 
 #mobile {
     display: none;
 }
 
+html, body {
+    background: var(--background-color);
+}
+
+main {
+    min-height: 80vh;
+}
+
+/* Header Styles */
+.header-logo {
+    font-family: var(--logo);
+    font-size: 2rem;
+}
+
+.header-logo > .r {
+    color: var(--twitter-blue);
+}
+
+.header-logo > .dot {
+    color: var(--off-white);
+}
+
+.header-logo > .monty {
+    color: var(--off-white);
+    transition: 0.5s ease-in-out;
+}
+
+.header-logo:hover > .monty {
+    color: var(--twitter-blue);
+    transition: 0.5s ease-in-out;
+}
+
+#basic-navbar-nav span {
+    color: var(--off-white);
+    font-size: 1rem;
+}
+
+#basic-navbar-nav .about-nav:hover {
+    color: var(--compliment-orange);
+    transition: 0.3s ease-in-out;
+}
+
+#basic-navbar-nav .works-nav:hover {
+    color: var(--compliment-orange);
+    transition: 0.3s ease-in-out;
+}
+
+#basic-navbar-nav .skills-nav:hover {
+    color: var(--compliment-orange);
+    transition: 0.3s ease-in-out;
+}
+
 /* Home Screen */
+.home-screen-container {
+    background: transparent;
+    margin-top: 16vh;
+}
 
+.home-screen-container h2 {
+    color: var(--twitter-blue);
+    font-size: 2rem;
+}
 
+.home-screen-container h1 {
+    font-size: 5rem;
+}
+
+.home-screen-container p {
+    max-width: 600px;
+    font-size: 1.2rem;
+}
 /* About Screen */
-
+.about-screen-container {
+    /* background: url('../public/images/bw-background.jpg'); */
+}
 
 /* Works Screen */
 

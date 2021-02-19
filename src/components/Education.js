@@ -7,6 +7,11 @@ const Education = ({ education }) => {
                 <Card.Title as='h2'>
                     <strong>{education.company}</strong>
                 </Card.Title>
+
+                <Card.Subtitle as='h5' className="pb-2">
+                    <strong>{education.program}</strong>
+                </Card.Subtitle>
+
                 <Card.Text as='div'>
                     <ul style={{listStyle: "none"}}>
                         {education.courses.map((course, index) => 

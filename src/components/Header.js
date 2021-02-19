@@ -20,19 +20,19 @@ const Header = () => {
                         <Nav className="ml-auto">
                             <LinkContainer to="/about">
                                 <Nav.Link>
-                                    <span>A Little About Me</span>
+                                    <span className="px-3 about-nav">A Little About Me</span>
                                 </Nav.Link>
                             </LinkContainer>
 
                             <LinkContainer to="/works">
                                 <Nav.Link>
-                                    <span>Featured Projects</span>
+                                    <span className="px-3 works-nav">Featured Projects</span>
                                 </Nav.Link>
                             </LinkContainer>
 
                             <LinkContainer to="/skills">
                                 <Nav.Link>
-                                    <span>Skillsets & Education</span>
+                                    <span className="px-3 skills-nav">Skillsets & Education</span>
                                 </Nav.Link>
                             </LinkContainer>
                         </Nav>
