@@ -37,6 +37,12 @@
 
 html, body {
     background: var(--background-color);
+    overflow:   scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
 main {
@@ -90,12 +96,12 @@ main {
 /* Home Screen */
 .home-screen-container {
     background: transparent;
-    margin-top: 16vh;
 }
 
 .home-screen-container h2 {
     color: var(--twitter-blue);
     font-size: 2rem;
+    margin-top: 10vh;
 }
 
 .home-screen-container h1 {
@@ -103,7 +109,6 @@ main {
 }
 
 .home-screen-container p {
-    max-width: 600px;
     font-size: 1.2rem;
 }
 /* About Screen */
@@ -137,7 +142,24 @@ main {
 
 
     /* Home Screen */
-
+    .home-screen-container {
+        /* margin-top: 10vh; */
+        height: 100vh;
+    }
+    
+    .home-screen-container h2 {
+        color: var(--twitter-blue);
+        font-size: 1.5rem;
+    }
+    
+    .home-screen-container h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .home-screen-container p {
+        font-size: 1rem;
+    }
 
     /* About Screen */
 
@@ -146,6 +168,7 @@ main {
 
 
     /* Education Screen */
+
     .font-awesome-icons {
         justify-content: center;
     }
