@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
-/* @import "react-alice-carousel/lib/alice-carousel.css"; */
+@import "react-alice-carousel/lib/alice-carousel.css";
 
 /* Core Styles */
 :root {
@@ -37,7 +37,7 @@
 
 html, body {
     background: var(--background-color);
-    overflow:   scroll;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -165,10 +165,17 @@ main {
 
 
     /* Works Screen */
+    .works-screen-container {
+        background: transparent;
+        min-height: 80vh;
+        margin-bottom: 10vh;
+    }
 
+    .works-screen-container .works-card-container {
+        background: transparent;
+    }
 
     /* Education Screen */
-
     .font-awesome-icons {
         justify-content: center;
     }
