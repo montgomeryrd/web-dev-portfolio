@@ -153,18 +153,19 @@ main {
     .home-screen-container h2 {
         color: var(--twitter-blue);
         font-size: 1.3rem;
-        margin-left: 20px;
+        margin-left: 15px;
     }
     
     .home-screen-container h1 {
         font-size: 3rem;
         font-weight: 600;
-        margin: 20px 0 20px 18px;
+        margin: 16px 0 20px 12px;
     }
     
     .home-screen-container p {
         font-size: 0.9rem;
-        margin: 0 20px;
+        margin-left: 15px;
+        padding-top: 5px;
     }
 
     /* About Screen */
@@ -205,7 +206,7 @@ main {
 
     .card-container .card-list {
         font-size: .9rem;
-        margin: -30px 0 0 -10px;
+        margin: -35px 0 0 -10px;
     }
 
     .card-container .card-link {
