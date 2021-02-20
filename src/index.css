@@ -7,11 +7,11 @@
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;
     --background-color: #001624;
-    --twitter-blue: #036bf4;
+    --twitter-blue: #438ae7;
     --compliment-orange: #f0900a;
     --off-white: #fff;
     --title: 'Yusei Magic', sans-serif;
-    --logo: 'Gochi Hand', cursive;
+    --logo: 'Nanum Brush Script', cursive;
 }
 
 * {
@@ -118,12 +118,15 @@ main {
 
 /* Works Screen */
 
-
 /* Education Screen */
 .font-awesome-icons {
     display: flex;
     flex-direction: row;
     list-style: none;
+}
+
+.card-link {
+    margin: -10px 0 0 -15px;
 }
 
 /* Footer Styles */
@@ -149,20 +152,25 @@ main {
     
     .home-screen-container h2 {
         color: var(--twitter-blue);
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-left: 20px;
     }
     
     .home-screen-container h1 {
-        font-size: 3.5rem;
-        margin-bottom: 20px;
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 20px 0 20px 18px;
     }
     
     .home-screen-container p {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        margin: 0 20px;
     }
 
     /* About Screen */
-
+    .about-screen-container {
+        height: 100vh;
+    }
 
     /* Works Screen */
     .works-screen-container {
@@ -177,7 +185,31 @@ main {
 
     /* Education Screen */
     .font-awesome-icons {
-        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .card-container {
+        background: transparent;
+    }
+
+    .card-container .card-title {
+        font-size: 1.2rem;
+        margin: -40px 0 25px -10px;
+        color: var(--twitter-blue);
+    }
+
+    .card-container .card-subtitle {
+        font-size: 1rem;
+        margin: -20px 0 30px -10px;
+    }
+
+    .card-container .card-list {
+        font-size: .9rem;
+        margin: -30px 0 0 -10px;
+    }
+
+    .card-container .card-link {
+        margin: -15px 0 0 -25px;
     }
 
     /* Footer Styles */

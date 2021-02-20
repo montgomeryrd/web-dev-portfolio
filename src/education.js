@@ -1,6 +1,6 @@
 const education = [
     {
-        company: 'Code Fellows',
+        company: 'Code Fellows of Seattle',
         program: 'Full Stack JavaScript',
         courses: [
             'Code 201: Foundations of Software Development',

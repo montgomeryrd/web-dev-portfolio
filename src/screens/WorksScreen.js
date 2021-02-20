@@ -14,7 +14,10 @@ const WorksScreen = () => {
     return (
         <>
             <h2 className="pl-3 lead">Featured Projects</h2>  
-            <Row  className="works-screen-container">
+            <Row id="desktop" className="works-screen-container">
+                {items}
+            </Row>
+            <Row id="mobile" className="works-screen-container">
                 <AliceCarousel disableButtonsControls mouseTracking items={items} />
             </Row>
         </>
