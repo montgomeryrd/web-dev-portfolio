@@ -2,17 +2,17 @@ import { Card, Nav } from 'react-bootstrap';
 
 const Education = ({ education }) => {
     return (
-        <Card className="mb-1">
+        <Card className="mb-1 card-container">
             <Card.Body>
-                <Card.Title as='h2'>
+                <Card.Title as='h2' className="card-title">
                     <strong>{education.company}</strong>
                 </Card.Title>
 
-                <Card.Subtitle as='h5' className="pb-2">
+                <Card.Subtitle as='h5' className="pb-2 card-subtitle">
                     <strong>{education.program}</strong>
                 </Card.Subtitle>
 
-                <Card.Text as='div'>
+                <Card.Text as='div' className="card-list">
                     <ul style={{listStyle: "none"}}>
                         {education.courses.map((course, index) => 
                             <li key={`${course}-${index}`}>
@@ -23,7 +23,7 @@ const Education = ({ education }) => {
                 </Card.Text>
                 <Nav>
                     <Nav.Link href={education.website} target="_blank">
-                        <Card.Text as='div' style={{marginLeft: "-15px"}}>
+                        <Card.Text as='div' className="mb-3 card-link">
                             visit website
                         </Card.Text>
                     </Nav.Link>

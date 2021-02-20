@@ -2,7 +2,7 @@ import { Card, Nav } from 'react-bootstrap';
 
 const Project = ({ project }) => {
     return (
-        <Card className="my-3 bg-secondary">
+        <Card className="my-3 works-card-container">
             <Nav>
                 <Nav.Link href={project.website} target="_blank">
                     <Card.Img src={project.image} variant='top' />

@@ -4,7 +4,7 @@ const HomeScreen = () => {
     return (
         <>
             <Jumbotron className="home-screen-container">
-                <h2 className="lead">Hi, my name is</h2>          
+                <h2 className=" lead">Hi, my name is</h2>          
                 <h1>Richard Montgomery</h1>
                 <p>
                     I am a web developer living on the Kitsap Peninsula in Washington State.
