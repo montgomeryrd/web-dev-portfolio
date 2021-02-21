@@ -11,6 +11,9 @@ const HomeScreen = () => {
                     I enjoy building functional web applications using interactive, adaptive
                     and responsive design.
                 </p>
+                <div className="home-arrow">
+                    <i className="fas fa-chevron-down"></i>
+                </div>
             </Jumbotron>
         </>
     )
