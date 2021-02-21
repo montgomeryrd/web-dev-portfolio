@@ -147,7 +147,7 @@ main {
     /* Home Screen */
     .home-screen-container {
         /* margin-top: 10vh; */
-        height: 100vh;
+        height: 90vh;
     }
     
     .home-screen-container h2 {
@@ -168,9 +168,25 @@ main {
         padding-top: 5px;
     }
 
+    @keyframes indicate-arrow {
+        0% { margin-top: 25vh; color: var(--off-white); }
+        25% { margin-top: 26vh; color: var(--compliment-orange); }
+        50% { color: var(--off-white); }
+        75% { color: var(--off-white); }
+        100% { margin-top: 25vh; color: var(--off-white); }
+    }
+    
+    .home-arrow {
+        animation: indicate-arrow 1.5s infinite;
+        display: flex;
+        justify-content: center;
+        margin-top: 30vh;
+    }
+
     /* About Screen */
     .about-screen-container {
         height: 100vh;
+        /* background: url('../public/images/bw-background.jpg') */
     }
 
     /* Works Screen */
@@ -214,4 +230,10 @@ main {
     }
 
     /* Footer Styles */
+}
+
+@media (max-width: 400px) {
+    .home-arrow {
+        margin-top: 25vh;
+    }   
 }
