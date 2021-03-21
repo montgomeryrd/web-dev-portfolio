@@ -16,6 +16,23 @@ const Header = () => {
                         </Navbar.Brand>
                     </LinkContainer>
 
+                    <div className="mobile menu-wrap">
+                        <input type="checkbox" className="toggler"/>
+                        <div className="hamburger">
+                            <div></div>
+                        </div>
+                        <div className="menu">
+                            <div className="ml-auto">
+                                <nav className="hamburger-links">
+                                    <a className="hamburger-link" href="#home">Home</a>
+                                    <a className="hamburger-link" href="#about">About Me</a>
+                                    <a className="hamburger-link" href="#works">My Works</a>
+                                    <a className="hamburger-link" href="#skills">Education</a>
+                                </nav>                                
+                            </div>
+                        </div>
+                    </div>
+
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
                             <LinkContainer to="/about">
