@@ -3,7 +3,7 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 import Project from '../components/Project';
-import projects from '../projects';
+import projects from '../data/projects';
 
 const WorksScreen = () => {
     const items = projects.map(project =>

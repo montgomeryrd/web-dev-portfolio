@@ -1,6 +1,6 @@
 import { Col } from 'react-bootstrap';
 import Education from '../components/Education';
-import education from '../education';
+import education from '../data/education';
 
 const SkillsAndEducationScreen = () => {
     return (
