@@ -1,0 +1,56 @@
+/* Mobile-First */
+header {
+    position: absolute;
+    height: 60px;
+    width: 100vw;
+    background: rgb(3, 13, 27);
+    border-bottom: 3px solid #fff;
+    z-index: 100;
+}
+
+.img-container {
+    position: absolute;
+    top: 15px;
+    width: 120px;
+    height: 120px;
+    right: 40px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    overflow: hidden;
+}
+
+.profile-pic {
+    width: 120px;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 25px;
+}
+
+.hamburger-menu:hover {
+    cursor: pointer;
+}
+
+.hamburger-lines, .hamburger-lines::before, .hamburger-lines::after {
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 2mm;
+}
+
+.hamburger-lines::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+}
+
+.hamburger-lines::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+}
+
