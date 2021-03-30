@@ -1,40 +1,46 @@
-import { Container } from 'react-bootstrap';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-import ScrollToTop from './utils/ScrollToTop';
 import Header from './components/Header';
-import HomeScreen from './screens/HomeScreen';
-import AboutScreen from './screens/AboutScreen';
-import WorksScreen from './screens/WorksScreen';
-import SkillsAndEducationScreen from './screens/SkillsAndEducationScreen';
 import Footer from './components/Footer';
+import Home from './screens/Home';
+import Projects from './screens/Projects';
+import About from './screens/About';
+import Education from './screens/Education';
+import { useEffect, useRef } from 'react';
+import './App.css';
 
 function App() {
-	return (
-		<Router>
-			<ScrollToTop />
-			<div id="desktop">
-				<Header />
-				<main className="py-3">
-					<Container>
-						<Route exact path="/" component={HomeScreen} />
-						<Route exact path="/about" component={AboutScreen} />
-						<Route exact path="/works" component={WorksScreen} />
-						<Route exact path="/skills" component={SkillsAndEducationScreen} />
-					</Container>
-				</main>
-				<Footer />
-			</div>
-			<div id="mobile">
-				<Header />
-				<HomeScreen />
-				<AboutScreen />
-				<WorksScreen />
-				<SkillsAndEducationScreen />
-				<Footer />
-			</div>
-		</Router>
-	);
+
+  let y = useRef(window.pageYOffset);
+
+  const trackingScrollY = () => {
+    y.current = Math.round(window.pageYOffset);
+    console.log(y);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', trackingScrollY);
+    // window.addEventListener('scroll', addButt);
+  }, []);
+
+  // const addButt = () => {
+  //   if (y.current > 500) {
+  //     const box = document.querySelector('.box-2');
+  //     const text = document.createElement('p');
+  //     text.innerHTML = 'butt';
+  //     box.appendChild(text);
+  //     return window.removeEventListener('scroll', addButt);
+  //   }
+  // }  
+
+  return (
+    <div className="App">
+      <Header />
+      <Home />
+      <Projects />
+      <About />
+      <Education />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
