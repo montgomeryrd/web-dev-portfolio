@@ -1,0 +1,60 @@
+.copyright {
+    text-align: right;
+    cursor: pointer;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.email {
+    cursor: pointer;
+}
+
+.copied-box {
+    position: absolute;
+    margin-top: -5px;
+    display: none;
+}
+
+.copied-speech-bubble {
+    position: absolute;
+    border: 1px solid rgba(65, 82, 95, 0.85);
+    margin-top: -45px;
+    margin-left: -20px;
+    padding: 3px 6px;
+}
+
+.copied-speech-bubble-triangle {
+    position: absolute;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid rgba(65, 82, 95, 0.85);
+    border-bottom: 1px solid rgba(65, 82, 95, 0.85);
+    margin-top: 17px;
+    margin-left: 17px;
+    background: #fff;
+}
+
+.copied-alert {
+    color: var(--off-white);
+}
+
+.email:hover .copied-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.email:hover {
+    animation: pulse .5s forwards;
+}

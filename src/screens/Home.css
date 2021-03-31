@@ -8,6 +8,7 @@
 }
 
 #home-container {
+    position: relative;
     width: 100vw;
     height: 100vh;
 }
@@ -45,17 +46,11 @@ video {
 }
 
 .home-jumbotron {
-    margin-bottom: 50px;
-}
-
-.home-jumbotron-text {
     position: relative;
-    z-index: 10;
-    margin-top: 140px;
-    padding: 10px;
+    padding: 140px 10px 80px 10px;
     color: #fff;
     width: 100%;
-    height: 260px;
+    border-bottom: 3px solid #fff;
 }
 
 .home-intro, .home-name, .home-paragraph {
@@ -76,11 +71,9 @@ video {
 }
 
 .alt-links {
-    position: absolute;
     width: 100%;
     display: flex;
     flex-direction: row;
-    bottom: 20px;    
     justify-content: space-evenly;
 }
 
@@ -89,8 +82,10 @@ video {
     align-items: center;
     justify-content: center;
     height: 80px;
-    width: 80px;
+    width: 25vw;
     z-index: 100;
+    border-bottom: 3px solid #fff;
+    text-decoration: none;
 }
 
 .icons {
@@ -102,14 +97,44 @@ video {
     background: #343434;
 }
 
+.github:hover {
+    background: #222222;
+}
+
 .linkedin {
     background: #1F618D;
+}
+
+.linkedin:hover {
+    background: #134c72;
 }
 
 .twitter {
     background: #0076C6;
 }
 
+.twitter:hover {
+    background: #008be794;
+}
+
 .resume {
     background: #474747;
 }
+
+.resume:hover {
+    background: #303030;
+}
+
+/* .home-libraries {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    opacity: .8;
+}
+
+.home-libraries img {
+    width: 20px;
+} */
