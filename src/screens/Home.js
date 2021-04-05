@@ -42,6 +42,10 @@ const Home = () => {
                     </a>
                 </section>
 
+                <section className="home-footer">
+                    <div className="arrow"></div>
+                </section>
+
                 {/* <section className="home-libraries">
                     <img src={html5} alt="HTML5" />
                     <img src={css3} alt="CSS3" />
