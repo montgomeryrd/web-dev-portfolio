@@ -3,23 +3,42 @@ import me from '../assets/images/../../assets/images/me.jpg';
 import './Header.css';
 
 const Header = () => {
-    const [modal, setModal] = useState(false);
+    const [menu, setMenu] = useState(false);
+    const [image, setImage] = useState(false);
 
+    const operateMenu = () => {
+        const imageElement = document.querySelector('.img-container');
+        setImage(prev => !prev);
+
+        if (!image) {
+            imageElement.classList.add('slide-image');
+            setTimeout(() => {
+                setMenu(prev => !prev);
+            }, 0);
+        } else {
+            setMenu(prev => !prev);
+            setTimeout(() => {
+                imageElement.classList.remove('slide-image');
+            }, 500);
+        }
+    }
     return (
         <header>
-            <div className="hamburger-menu" onClick={() => {setModal(prev => !prev)}}>
-                <div className="hamburger-lines"></div>
-            </div>
+            <section className={menu ? "expand-menu menu-container" : "retract-menu menu-container"}>
+                <div className="hamburger-menu" onClick={operateMenu}>
+                    <div className="hamburger-menu-lines"></div>
+                </div>
 
-            <div className="hamburger-modal" style={{display: modal ? 'flex' : 'none'}}>
-                <h2>Projects</h2>
-                <h2>About</h2>
-                <h2>Education</h2>
-            </div>
+                <div className="menu">
+                    <h2 className="select-1">View My Projects</h2>
+                    <h2 className="select-2">About Me</h2>
+                    <h2 className="select-3">Education</h2>
+                </div>
+            </section>
 
-            <div className="img-container">
+            <section className="img-container">
                 <img className="profile-pic" src={me} alt="profile pic" />
-            </div>
+            </section>
         </header>
     )
 }
