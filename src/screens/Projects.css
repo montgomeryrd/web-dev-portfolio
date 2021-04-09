@@ -1,0 +1,11 @@
+#projects-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid red;
+}
+
+.projects-content {
+    position: absolute;
+    overflow: hidden;
+}
