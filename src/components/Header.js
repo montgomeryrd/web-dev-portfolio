@@ -30,9 +30,9 @@ const Header = () => {
                 </div>
 
                 <div className="menu">
-                    <h2 className="select-1">View My Projects</h2>
-                    <h2 className="select-2">About Me</h2>
-                    <h2 className="select-3">Education</h2>
+                    <a href="#projects-container" className="select-1">View My Projects</a>
+                    <a href="#about-container" className="select-2">About Me</a>
+                    <a href="#education-container" className="select-3">Education</a>
                 </div>
             </section>
 
