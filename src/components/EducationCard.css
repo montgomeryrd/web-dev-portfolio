@@ -1,0 +1,36 @@
+.education-card-container {
+    position: relative;
+}
+
+.education-card-image {
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 60px;
+    padding: 15px;
+}
+
+.codefellows {
+    background: rgb(14, 14, 14);
+}
+
+.codewars {
+    background: rgb(27, 27, 27);
+}
+
+/* @keyframes open {
+    0% { height: 0; }
+    100% { min-height: 100%; }
+} */
+
+.card-expand {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* animation: open 1s forwards; */
+}
+
+.card-retract {
+    display: none;
+}

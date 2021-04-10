@@ -1,6 +1,6 @@
 const education = [
     {
-        company: 'Code Fellows of Seattle',
+        company: 'codefellows',
         program: 'Full Stack JavaScript',
         courses: [
             'Code 201: Foundations of Software Development',
@@ -10,7 +10,7 @@ const education = [
         website: 'https://www.codefellows.org/'
     },
     {
-        company: 'Codecademy',
+        company: 'codecademy',
         program: 'HTML, CSS, JS - Web Development',
         courses: [
             'Learn Git Course',
@@ -38,7 +38,7 @@ const education = [
         website:'https://www.codecademy.com/'
     },
     {
-        company: 'Udemy',
+        company: 'udemy',
         program: 'MERN Stack Applications',
         courses: [
             'MERN Stack Web Development with Ultimate Authentication',
@@ -47,16 +47,10 @@ const education = [
         website: 'https://www.udemy.com/'
     },
     {
-        company: 'Codewars',
+        company: 'codewars',
         program: 'Code Challenges',
-        courses: [
-            'Rank: 3 kyu',
-            'Honor: 2,148',
-            'Leaderboard Position: #4,031',
-            'Honor Percentile: Top 1.455%',
-            'Total Completed Kata: 510'
-        ],
-        website: 'https://www.codewars.com/'
+        courses: [],
+        website: 'https://www.codewars.com/users/montgomeryrd'
     }
 ]
 
