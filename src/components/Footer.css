@@ -4,10 +4,16 @@
 }
 
 .footer-container {
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 35px 0 20px 0;
+}
+
+.footer-fontawesome-icons a {
+    margin: 0 5px;
 }
 
 .email {

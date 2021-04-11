@@ -1,0 +1,55 @@
+.education-card-container {
+    position: relative;
+}
+
+.education-fontawesome-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.education-card-image {
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 60px;
+    padding: 15px 0;
+}
+
+.education-card-program {
+    padding: 5px;
+}
+
+.education-card-courses {
+    padding: 5px;
+}
+
+.education-card-courses li {
+    line-height: 20px;
+}
+
+.education-card-link {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.codefellows {
+    background: rgb(14, 14, 14);
+}
+
+.codewars {
+    background: rgb(27, 27, 27);
+}
+
+.card-expand {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card-retract {
+    display: none;
+}
