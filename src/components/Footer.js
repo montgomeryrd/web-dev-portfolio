@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
                 <span className="email-text" onClick={() => copyEmailAddress()}>montgomery_rd@yahoo.com</span>
             </section>
-            <section>
+            <section className="footer-fontawesome-icons">
                 <a className="ml-3 p-3" href="https://github.com/montgomeryrd" target="_blank" rel="noreferrer">
                     <i className="fab fa-github-alt"></i>
                 </a>

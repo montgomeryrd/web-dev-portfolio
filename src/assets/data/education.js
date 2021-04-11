@@ -39,7 +39,7 @@ const education = [
     },
     {
         company: 'udemy',
-        program: 'MERN Stack Applications',
+        program: 'MERN Stack',
         courses: [
             'MERN Stack Web Development with Ultimate Authentication',
             'MERN eCommerce From Scratch'
