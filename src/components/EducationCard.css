@@ -1,5 +1,16 @@
 .education-card-container {
     position: relative;
+    font-family: var(--josefin);
+}
+
+.card-expand {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card-retract {
+    display: none;
 }
 
 .education-fontawesome-icons {
@@ -20,11 +31,12 @@
 }
 
 .education-card-program {
-    padding: 5px;
+    padding: 15px 15px 0px 15px;
 }
 
 .education-card-courses {
-    padding: 5px;
+    padding: 15px;
+    list-style: none;
 }
 
 .education-card-courses li {
@@ -32,7 +44,7 @@
 }
 
 .education-card-link {
-    padding: 5px;
+    padding: 0 15px 10px 15px;
     text-decoration: none;
 }
 
@@ -42,14 +54,4 @@
 
 .codewars {
     background: rgb(27, 27, 27);
-}
-
-.card-expand {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.card-retract {
-    display: none;
 }

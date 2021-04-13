@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gudea:wght@400;700&family=Josefin+Sans:wght@300&display=swap');
-:root {
-    --josefin: 'Josefin Sans';
-    --gudea: 'Gudea';
-    --fredericka: 'Fredericka the Great cursive';
-}
-
 #home-container {
     position: relative;
     width: 100vw;
@@ -45,7 +38,7 @@ video {
 
 .home-jumbotron {
     position: relative;
-    padding: 140px 10px 80px 10px;
+    padding: 140px 20px 80px 20px;
     color: #fff;
     width: 100%;
 }
