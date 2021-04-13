@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gudea:wght@400;700&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    --josefin: 'Josefin Sans';
+    --gudea: 'Gudea';
+    --fredericka: 'Fredericka the Great cursive';
+}
+
 /* Mobile First */
 
 html {
