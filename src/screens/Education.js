@@ -69,19 +69,22 @@ const Education = () => {
     );
 
     return (
-        <div id="education-container" className="desktop mobile" style={{height: `${100}vh`}}>
+        <div id="education-container" className="desktop mobile">
             <main className="education-content" role="main">
-                <section className="box-1">
-
-                </section>
 
                 {codefellows}
                 {codecademy}
                 {codewars}        
                 {udemy}
 
-                <section className="box-2">
-                
+                <section className="contact">
+                    I'm seeking the opportunity to develop myself in web development.
+
+                    I completed the Full Stack JavaScript curriculum at CodeFellows of Seattle, continued to 
+                    expand my knowledge of web development through Codecademy and Udemy modules and earning 
+                    a 3kyu completing code challenges on Codewars.
+
+                    
                 </section>
 
             </main>
