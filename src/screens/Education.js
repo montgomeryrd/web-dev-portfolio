@@ -78,13 +78,11 @@ const Education = () => {
                 {udemy}
 
                 <section className="contact">
-                    I'm seeking the opportunity to develop myself in web development.
-
-                    I completed the Full Stack JavaScript curriculum at CodeFellows of Seattle, continued to 
-                    expand my knowledge of web development through Codecademy and Udemy modules and earning 
-                    a 3kyu completing code challenges on Codewars.
-
-                    
+                    I'm seeking an opportunity to develop myself in a career of web development. 
+                    Though my primary education in full stack javascript was served through a fire-
+                    hose supplemented by online modules and tutorials, I feel that extra months of 
+                    code challenges and learning-by-doing have primed me for a position as a junior 
+                    developer. I'm ready to get paid-while-learning.
                 </section>
 
             </main>

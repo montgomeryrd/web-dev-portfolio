@@ -15,7 +15,9 @@ html {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background-color: rgb(245, 245, 245);
 }
+
 .mobile {
   display: none;
 }

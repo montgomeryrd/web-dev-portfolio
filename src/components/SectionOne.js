@@ -3,8 +3,8 @@ import './Sections.css';
 
 const SectionOne = () => {
     return (
-        <div className="section-1">
-            
+        <div className="desktop mobile">
+            <section className="section-1"></section>            
         </div>
     )
 }
