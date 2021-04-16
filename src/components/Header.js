@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import me from '../assets/images/../../assets/images/me.jpg';
+import bgImage from '../assets/images/bw-background.jpg';
 import './Header.css';
 
 const Header = () => {
@@ -24,21 +24,19 @@ const Header = () => {
     }
     return (
         <header>
-            <section className={menu ? "expand-menu menu-container" : "retract-menu menu-container"}>
-                <div className="hamburger-menu" onClick={operateMenu}>
-                    <div className="hamburger-menu-lines"></div>
-                </div>
+            <div className="menu-container">
+                <div className={menu ? "expand-menu" : "retract-menu"}>
+                    <div className="hamburger-menu" onClick={operateMenu}>
+                        <div className="hamburger-menu-lines"></div>
+                    </div>
 
-                <div className="menu">
-                    <a href="#projects-container" className="select-1">View My Projects</a>
-                    <a href="#about-container" className="select-2">About Me</a>
-                    <a href="#education-container" className="select-3">Education</a>
+                    <div className="menu">
+                        <a href="#projects-container" className="select-1">View My Projects</a>
+                        <a href="#about-container" className="select-2">About Me</a>
+                        <a href="#education-container" className="select-3">Education</a>
+                    </div>
                 </div>
-            </section>
-
-            <section className="img-container">
-                <img className="profile-pic" src={me} alt="profile pic" />
-            </section>
+            </div>
         </header>
     )
 }

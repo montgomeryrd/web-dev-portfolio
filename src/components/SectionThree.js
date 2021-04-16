@@ -3,7 +3,7 @@ import './Sections.css';
 
 const SectionThree = () => {
     return (
-        <section className="desktop mobile">
+        <div className="desktop mobile">
             <ul className="section-three-fontawesome-icons" style={{listStyle: "none"}}>
                 <li><i className="fab fa-github"></i></li>
                 <li><i className="fab fa-html5"></i></li>
@@ -15,7 +15,7 @@ const SectionThree = () => {
                 <li><i className="fab fa-mdb"></i></li>
                 <li><i className="fab fa-sass"></i></li>
             </ul>
-        </section>
+        </div>
     )
 }
 
