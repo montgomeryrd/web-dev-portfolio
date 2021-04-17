@@ -4,9 +4,9 @@
     position: absolute;
     background: #fff;
     top: 10%;
-    left: 5%;
+    right: 5%;
     width: 600px;
-    height: 1300px;
+    height: 80vh;
     box-shadow: 0px 5px 20px 10px rgba(109, 109, 109, 0.3);
 }
 
@@ -93,6 +93,7 @@
     font-weight: 900;
     border-radius: 20mm;
 }
+
 
 /*
 .video-background {
