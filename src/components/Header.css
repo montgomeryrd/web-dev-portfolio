@@ -1,12 +1,9 @@
 /* desktop */
 
 header {
-    background-image: url("../assets/images/pexelsmountains.jpg");
-    opacity: 0.7;
-    background-size: cover;
-    background-position: bottom;
-    height: 400px;
-    width: 100vw;
+    /* background-image: url("../assets/images/pexelsmountains.jpg"); */
+    /* background-size: cover; */
+    /* background-position: bottom; */
 }
 
 .menu-container {

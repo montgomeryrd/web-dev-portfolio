@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import bgImage from '../assets/images/bw-background.jpg';
+import Canvas from './Canvas';
 import './Header.css';
 
 const Header = () => {
@@ -24,6 +24,7 @@ const Header = () => {
     }
     return (
         <header>
+            <Canvas />
             <div className="menu-container">
                 <div className={menu ? "expand-menu" : "retract-menu"}>
                     <div className="hamburger-menu" onClick={operateMenu}>

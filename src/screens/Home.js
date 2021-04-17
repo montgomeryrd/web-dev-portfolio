@@ -38,7 +38,7 @@ const Home = () => {
 
                     <section className="tech-stack-container">
                         <h3 className="home-stack">TECH STACK</h3>
-                        <div className="home-stack-icons">
+                        <div className="home-stack-items">
                             <span className="tech">HTML5</span>
                             <span className="tech">CSS3</span>
                             <span className="tech">JAVASCRIPT</span>

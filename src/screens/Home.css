@@ -70,12 +70,16 @@
     color: black;
 }
 
+.home-fontawesome-icons a i:hover {
+    color:lightseagreen;
+}
+
 .home-stack {
-    margin: 50px 0 20px 40px;
+    margin: 50px 0 20px 55px;
     font-size: 1.6em;
 }
 
-.home-stack-icons {
+.home-stack-items {
     margin: 20px 50px;
     display: flex;
     flex-direction: row;
