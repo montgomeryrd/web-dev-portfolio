@@ -9,7 +9,7 @@ import codecademyLogo from '../assets/links/codecademy-logo.png';
 import udemyLogo from '../assets/links/udemy-logo.png';
 import codewarsLogo from '../assets/links/codewars-logo.png';
 
-const Education = () => {
+const Education = ({ styling }) => {
     const [myCodewarsStats, setMyCodewarsStats] = useState({});
     
     useEffect(() => {
@@ -69,7 +69,7 @@ const Education = () => {
     );
 
     return (
-        <div id="education-container" className="desktop mobile">
+        <div id="education-container" className={styling}>
             <main className="education-content" role="main">
 
                 {codefellows}

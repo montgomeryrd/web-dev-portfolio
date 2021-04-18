@@ -1,9 +1,9 @@
 import React from 'react';
 import './Sections.css';
 
-const SectionThree = () => {
+const SectionThree = ({ styling }) => {
     return (
-        <div className="desktop mobile">
+        <div className={styling}>
             <ul className="section-three-fontawesome-icons" style={{listStyle: "none"}}>
                 <li><i className="fab fa-github"></i></li>
                 <li><i className="fab fa-html5"></i></li>

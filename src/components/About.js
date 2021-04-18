@@ -1,8 +1,8 @@
 import './About.css';
 
-const About = () => {
+const About = ({ styling }) => {
     return (
-        <div id="about-container" className="desktop mobile" style={{height: `${100}vh`}}>
+        <div id="about-container" className={styling}>
             <main className="about-content" role="main">
                 <h2>technical</h2>
 

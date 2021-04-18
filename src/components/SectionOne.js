@@ -1,9 +1,9 @@
 import React from 'react';
 import './Sections.css';
 
-const SectionOne = () => {
+const SectionOne = ({ styling }) => {
     return (
-        <div className="desktop mobile">
+        <div className={styling}>
             <section className="section-1"></section>            
         </div>
     )

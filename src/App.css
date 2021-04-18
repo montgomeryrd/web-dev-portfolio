@@ -17,17 +17,3 @@ html {
   user-select: none;
   background-color: rgb(245, 245, 245);
 }
-
-.mobile {
-  display: none;
-}
-
-@media (max-width: 600px){
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: flex;
-  }
-}
