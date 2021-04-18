@@ -1,8 +1,8 @@
 import './Projects.css';
 
-const Projects = () => {
+const Projects = ({ styling }) => {
     return (
-        <div id="projects-container" className="desktop mobile">
+        <div id="projects-container" className={styling}>
             <main className="projects-content" role="main">
                 <div className="row">
                     <div className="p-1">

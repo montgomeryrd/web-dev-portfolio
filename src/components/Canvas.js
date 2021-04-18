@@ -8,7 +8,7 @@ const Canvas = () => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
-        canvas.height = 300;
+        canvas.height = window.innerHeight;
     
         let particleArray = [];
     
@@ -24,8 +24,8 @@ const Canvas = () => {
         });
         
         ctx.fillStyle = 'black';
-        ctx.font = '30px Verdana';
-        ctx.fillText('r', 0, 25);
+        ctx.font = `30px Arial`;
+        ctx.fillText('rm', 10, 25);
         const textCoordinates = ctx.getImageData(0, 0, 100, 100);
     
         class Particle {
@@ -95,7 +95,7 @@ const Canvas = () => {
                     let dy = particleArray[a].y - particleArray[b].y;
                     let distance = Math.sqrt(dx * dx + dy * dy);
 
-                    if (distance < 50) {
+                    if (distance < 35) {
                         opacityValue = 1 - (distance/50);
                         ctx.strokeStyle = 'rgba(0,0,0' + opacityValue + ')';
                         ctx.lineWidth = 2;

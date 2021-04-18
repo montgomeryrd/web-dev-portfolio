@@ -1,9 +1,9 @@
 import me from '../assets/images/../../assets/images/me.jpg';
 import './Home.css';
 
-const Home = () => {
+const Home = ({ styling }) => {
     return (
-        <div id="home-container">
+        <div id="home-container" className={styling}>
             <main className="home-container" role="main">
 
                 {/* <video src={pexels} muted loop autoPlay></video>
@@ -17,9 +17,13 @@ const Home = () => {
                     <section className="home-quick-details">
                         <h2 className="home-name">Richard Montgomery</h2>
                         <h3 className="home-title">Software Developer</h3>
-                        <h3 className="home-location">
+                        <p className="home-text">
+                            I enjoy building functional web applications 
+                            using interactive, adaptive and responsive design.
+                        </p>
+                        <a className="home-location" href="https://www.google.com/maps/place/Kitsap+County,+WA/@47.6866071,-123.2897091,9z/data=!4m5!3m4!1s0x54904f05579719ab:0xf361976886df6ce5!8m2!3d47.6476607!4d-122.6412583" target="_blank" rel="noreferrer">
                             <i className="fas fa-map-marker-alt"></i> Kitsap Peninsula, WA
-                        </h3>
+                        </a>
                     </section>
 
                     <section className="home-fontawesome-icons">
@@ -41,17 +45,17 @@ const Home = () => {
                         <div className="home-stack-items">
                             <span className="tech">HTML5</span>
                             <span className="tech">CSS3</span>
-                            <span className="tech">JAVASCRIPT</span>
+                            <span className="tech">JavaScript</span>
                             <span className="tech">SASS</span>
-                            <span className="tech">GITHUB</span>
-                            <span className="tech">NODEJS</span>
-                            <span className="tech">REACT</span>
-                            <span className="tech">MONGODB</span>
-                            <span className="tech">FIREBASE</span>
+                            <span className="tech">Github</span>
+                            <span className="tech">NodeJS</span>
+                            <span className="tech">React</span>
+                            <span className="tech">MongoDB</span>
+                            <span className="tech">Firebase</span>
                         </div>
                     </section>
 
-                    <section className="alt-links">
+                    <section className="mobile alt-links">
                         <a className="github links" href="https://github.com/montgomeryrd" target="_blank" rel="noreferrer">
                             <i className="icons fab fa-github-square"></i>
                         </a>

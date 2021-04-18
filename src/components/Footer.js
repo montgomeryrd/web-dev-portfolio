@@ -1,6 +1,6 @@
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({ styling }) => {
     const copyEmailAddress = () => {
         const emailAddress = document.querySelector('.email-text');
         const textArea = document.createElement('textarea');
@@ -19,7 +19,7 @@ const Footer = () => {
     }
     
     return (
-        <footer className="desktop mobile">
+        <footer className={styling}>
             <div className="footer-container">
                 <section className="email">
                     <div className="copied-box">
