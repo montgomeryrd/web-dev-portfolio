@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Canvas from './Canvas';
 import './Header.css';
 
-const Header = ({ styling }) => {
+const Header = ({ theme }) => {
     const [menu, setMenu] = useState(false);
     const [image, setImage] = useState(false);
 
@@ -23,7 +23,7 @@ const Header = ({ styling }) => {
         }
     }
     return (
-        <header className={styling}>
+        <header className={theme}>
             <Canvas />
             <div className="menu-container">
                 <div className={menu ? "expand-menu" : "retract-menu"}>
