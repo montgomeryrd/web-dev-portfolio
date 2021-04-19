@@ -15,12 +15,8 @@ const Home = ({ theme, button }) => {
             <section className="jumbotron">
                 <h1 className="name">Richard Montgomery</h1>
                 <h2 className="job-title">Software Developer</h2>
-                <p className="intro">
-                    I enjoy building functional web applications 
-                    using interactive, adaptive and responsive design.
-                </p>
                 <a className="location" href="https://www.google.com/maps/place/Kitsap+County,+WA/@47.6866071,-123.2897091,9z/data=!4m5!3m4!1s0x54904f05579719ab:0xf361976886df6ce5!8m2!3d47.6476607!4d-122.6412583" target="_blank" rel="noreferrer">
-                    <i className="fas fa-map-marker-alt"></i> Kitsap Peninsula, WA
+                    <i className="fas fa-map-marker-alt"></i>Kitsap Peninsula, WA
                 </a>
             </section>
             
@@ -37,6 +33,7 @@ const Home = ({ theme, button }) => {
                     <i className="fab fa-twitter"></i>
                 </a>
             </section>
+
 
             <section className="tech-stack-container">
                 <h3 className="title">TECH STACK</h3>
