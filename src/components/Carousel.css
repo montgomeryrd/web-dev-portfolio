@@ -1,0 +1,44 @@
+.carousel-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.carousel-page {
+    position: relative;
+    margin-right: 100px;
+    width: 400px;
+    height: 1000px;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel-buttons-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel-buttons {
+    width: 40px;
+    height: 40px;
+}
+
+.watching-kill-la-kill-so-im-improvising-a-spacer-rather-than-find-proper-css {
+    width: 20px;
+}
+
+.carouse-left, .carouse-right {
+    background: transparent;
+    border: none;
+    outline: none;
+    transform: scale(2);
+}

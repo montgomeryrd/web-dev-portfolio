@@ -28,7 +28,7 @@ function App() {
 	return (
 		<div className="App">
 			<Header theme={theme} />
-			<Carousel />
+			<Carousel theme={theme} />
 			{/* <Home theme={theme} button={button} /> */}
 			{/* <SectionOne theme={theme} />
 			<Projects theme={theme} />

@@ -77,13 +77,13 @@ const Education = ({ styling }) => {
                 {codewars}        
                 {udemy}
 
-                <section className="contact">
+                {/* <section className="contact">
                     I'm seeking an opportunity to develop myself in a career of web development. 
                     Though my primary education in full stack javascript was served through a fire-
                     hose supplemented by online modules and tutorials, I feel that extra months of 
                     code challenges and learning-by-doing have primed me for a position as a junior 
                     developer. I'm ready to get paid-while-learning.
-                </section>
+                </section> */}
 
             </main>
         </div>
