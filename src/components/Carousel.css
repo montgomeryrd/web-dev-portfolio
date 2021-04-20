@@ -4,16 +4,22 @@
     right: 0;
 }
 
-.carousel-page {
+.carousel-page-view {
     position: relative;
     margin-right: 100px;
     width: 400px;
-    height: 1000px;
+    height: 950px;
     overflow: hidden;
     transition: 1s ease-in-out;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
+}
+
+.carousel-pages {
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .carousel-buttons-container {
