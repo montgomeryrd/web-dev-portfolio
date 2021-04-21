@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import Header from './components/Header';
-// import Home from './components/Home';
-import Carousel from './components/Carousel';
+// import Header from './components/Header';
+import Home from './components/Home';
 // import SectionOne from './components/SectionOne';
 // import Projects from './components/Projects';
 // import SectionTwo from './components/SectionTwo';
@@ -27,9 +26,8 @@ function App() {
 
 	return (
 		<div className="App">
-			<Header theme={theme} />
-			<Carousel theme={theme} />
-			{/* <Home theme={theme} button={button} /> */}
+			{/* <Header theme={theme} /> */}
+			<Home theme={theme} button={button} />
 			{/* <SectionOne theme={theme} />
 			<Projects theme={theme} />
 			<SectionTwo theme={theme} />

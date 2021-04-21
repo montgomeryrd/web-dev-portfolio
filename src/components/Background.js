@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
-import './Canvas.css';
 
-const Canvas = () => {
+const Background = () => {
 
     const canvasRef = useRef(null);
     
@@ -16,7 +15,7 @@ const Canvas = () => {
         const mouse = {
             x: null,
             y: null,
-            radius: 250
+            radius: (canvas.width/80) * (canvas.height/80)
         };
 
         window.addEventListener('mousemove', function(event) {
@@ -121,10 +120,9 @@ const Canvas = () => {
         animate();
 
     }, []);
-
     return (
         <canvas ref={canvasRef} />
     )
 }
 
-export default Canvas;
+export default Background;
